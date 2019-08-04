@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LINE_CHART_COLORS } from '../../shared/chart.colors';
 
 
 const LINE_CHART_SAMPLE_DATA: any[] = [
@@ -35,7 +36,7 @@ export class LineChartComponent implements OnInit {
   };
   lineChartLegend: true;
   lineChartType = 'line';
-  
+  lineChartColors = LINE_CHART_COLORS;
 
   ngOnInit() {
   }
